@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+            height: 50vh;
+            margin-top: 1%;
+            margin-left: 1%;
+            
+        }
+        .item {
+            color: #a05a5a;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            padding-left: 3%;
+        }
+
+        .div {
+            width: 45%;
+            display: inline-block;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        nonveg = ['Egg masala','Egg burji', 'Chicken Curry','Mutton curry','Mandi']
+        veg = ['panner masala','veg biriyani','tamato rice','curd rice', 'veg mandi']
+        h3 = document.createElement('h3')
+        h3.innerText = 'welcome to Restaurant'
+
+
+        img3 = document.createElement('img')
+        img3.setAttribute('src','https://wallpapers.com/images/featured/restaurant-background-2ez77umko2vj5w02.jpg')
+        img3.setAttribute('class','main')
+
+        img2 = document.createElement('img')
+        img2.setAttribute('src','https://c0.wallpaperflare.com/preview/565/228/846/japanese-japan-restaurant-culture.jpg')
+        img2.setAttribute('class','main')
+
+
+
+        mar = document.createElement('marquee')
+        mar.innerText = 'Egg salad chicken curry mutton fry panner masala'
+        mar.style.marginTop = "2%"
+
+        h4 = document.createElement('h2')
+        h4.innerText = 'Non-veg'
+        h4.style.color = "coral"
+
+        div = document.createElement('div')
+        div.setAttribute('class','div')
+        for (let i=0;i<nonveg.length;i++){
+            para = document.createElement('h4')
+            para.setAttribute('class','item')
+            para.innerText = nonveg[i]
+            div.appendChild(para)
+        }
+
+        div1 = document.createElement('div')
+        div1.setAttribute('class','div')
+        for (let i=0;i<veg.length;i++){
+            para1 = document.createElement('h4')
+            para1.setAttribute('class','item')
+            para1.innerText = veg[i]
+            div1.appendChild(para1)
+        }
+
+
+
+        document.body.appendChild(h3)
+        document.body.appendChild(img3)
+        document.body.appendChild(img2)
+        document.body.appendChild(mar)
+        document.body.appendChild(h4)
+        document.body.appendChild(div)
+        document.body.appendChild(div1)
+
+
+
+       
+      
+
+    </script>
+</body>
+</html>
